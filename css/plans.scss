@@ -1,0 +1,158 @@
+#plans{
+        width: 100%;
+        background-color: #1b1b1b;
+        min-height: 85vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='1080' preserveAspectRatio='none' viewBox='0 0 1920 1080'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1107%26quot%3b)' fill='none'%3e%3cpath d='M1996.0338178471047 962.0054373359378L2075.523830167042 765.2607528649615 1740.6617973006091 744.3980766205437z' fill='rgba(255%2c 156%2c 0%2c 0.58)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M-103.43749966101377 680.0499290762777L194.95578990901544 874.2333523500472 216.66483947999671 563.7794796850284z' fill='rgba(255%2c 156%2c 0%2c 0.58)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1762.5142836366597 785.3639029084696L1514.6799414073253 1016.0319780802404 1796.157861117075 1107.4896982486027z' fill='rgba(255%2c 156%2c 0%2c 0.58)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1761.7186448506554 226.2442601700783L1527.9386790193414 242.59174787692493 1778.066132557502 460.0242260013924z' fill='rgba(255%2c 156%2c 0%2c 0.58)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1619.5749032775843 337.8753229965222L1562.4611868727497 550.2169430655076 1748.9686252105364 503.7154159493497z' fill='rgba(255%2c 156%2c 0%2c 0.58)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M644.5334511404103 935.8951693950477L725.7775266938412 1014.3516611765735 802.8402265894146 853.2573019556644z' fill='rgba(255%2c 156%2c 0%2c 0.58)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1253.8809513704814 468.4117671219593L1174.1427798335749 586.6284679431506 1391.336916833815 647.1273748379148z' fill='rgba(255%2c 156%2c 0%2c 0.58)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1107'%3e%3crect width='1920' height='1080' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+        flex-wrap: wrap;
+        padding-top: 50px;
+    }
+.plans{
+    width: 320px;
+    height: 650px;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.plans h1{
+    font-size: 24pt;
+}
+.plans p{
+    font-size: 12pt;
+    padding-left: 10px;
+}
+.freepack{
+    border: 0px solid #ff9c00;
+
+    transition: .1s linear;
+}
+.freepack:hover{
+    border: 4px solid #ff9c00;
+    border-top: 8px solid #ff9c00;
+    box-shadow: #ff9c00 0px 0px 15px;
+}
+.freepack i{
+    font-size: 14pt;
+    color: #ff9c00;
+}
+.freepack .fa-check-circle{
+    font-size: 14pt;
+    color: #ff9c00;
+}
+.freepack button{
+    width: 280px;
+    height: 50px;
+    background-color: #ff9c00;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 22pt;
+    font-weight: 600;
+    border-radius: 100px;
+    cursor: pointer ;
+    transition: .3s;
+}
+.freepack button:hover{
+    box-shadow: #ff9c00 0px 0px 15px;
+}
+.premiumpack{
+    border:0px solid #ff9c00;
+    transition: .1s linear;
+}
+.premiumpack:hover{
+border:4px solid #854deb;
+border-top: 8px solid #854deb;
+box-shadow: #854de8 0px 0px 15px;
+}
+.premiumpack i{
+    font-size: 14pt;
+    color: #854deb;
+}
+.premiumpack .fa-check-circle{
+    font-size: 14pt;
+    color: #854deb;
+}
+.premiumpack button{
+    width: 280px;
+    height: 50px;
+    background-color: #854deb;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 22pt;
+    font-weight: 600;
+    border-radius: 100px;
+    cursor: pointer ;
+    transition: .3s;
+}
+.premiumpack button:hover{
+    box-shadow: #854deb 0px 0px 15px;
+}
+.ultrapack{
+    border:0px solid #ff9c00;
+    transition: .1s linear;
+}
+.ultrapack:hover{
+border:4px solid #ff2b21;
+border-top: 8px solid #ff2b21;
+box-shadow: #ff2b21 0px 0px 15px;
+}
+.ultrapack i{
+    font-size: 14pt;
+    color: #ff2b21;
+}
+.ultrapack .fa-check-circle{
+    font-size: 14pt;
+    color: #ff2b21;
+}
+.ultrapack button{
+    width: 280px;
+    height: 50px;
+    background-color: #ff2b21;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 22pt;
+    font-weight: 600;
+    border-radius: 100px;
+    cursor: pointer ;
+    transition: .3s;
+}
+.ultrapack button:hover{
+    box-shadow: #ff2b21 0px 0px 15px;
+}
+hr{
+    width:280px;
+    margin-bottom: 40px;
+    border-color: gray;
+    
+}
+.freepack{
+    border-top: 8px solid #ff9c00;
+}
+.freepack b{
+    color: #ff9c00;
+}
+.premiumpack b{
+    color: #854deb;
+}
+.ultrapack b{
+    color: #ff2b21;
+}
+.premiumpack{
+    border-top: 8px solid #854deb;
+}
+.ultrapack{
+    border-top: 8px solid #ff2b21;
+}

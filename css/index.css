@@ -1,0 +1,868 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffa800;
+  border-radius: 222px;
+}
+
+@font-face {
+  font-family: "Dead Font Walking";
+  src: url(../styles/walkingdeadfont.otf);
+}
+
+@font-face {
+  font-family: "Capture it";
+  src: url(../styles/prisonbreakfont.ttf);
+}
+
+@font-face {
+  font-family: "Benguiat Bold";
+  src: url(../styles/strangerthingsfont.ttf);
+}
+
+@font-face {
+  font-family: "Breaking B";
+  src: url(../styles/breakingbadfont.ttf);
+}
+
+@font-face {
+  font-family: "SHERLOCK HOLMES";
+  src: url(../styles/sherlockholmesfont.ttf);
+}
+
+@font-face {
+  font-family: "SLiCE n DiCE";
+  src: url(../styles/blackmirrorfont.ttf);
+}
+
+@font-face {
+  font-family: "AntiqueOliveStd-NordItalic";
+  src: url(../styles/fastandfuriousfont.otf);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+b {
+  font-weight: 600;
+}
+
+#main {
+  min-height: 90vh;
+}
+
+body {
+  background-color: #1b1b1b;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='1080' preserveAspectRatio='none' viewBox='0 0 1920 1080'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1107%26quot%3b)' fill='none'%3e%3cpath d='M1996.0338178471047 962.0054373359378L2075.523830167042 765.2607528649615 1740.6617973006091 744.3980766205437z' fill='rgba(255%2c 156%2c 0%2c 0.58)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M-103.43749966101377 680.0499290762777L194.95578990901544 874.2333523500472 216.66483947999671 563.7794796850284z' fill='rgba(255%2c 156%2c 0%2c 0.58)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1762.5142836366597 785.3639029084696L1514.6799414073253 1016.0319780802404 1796.157861117075 1107.4896982486027z' fill='rgba(255%2c 156%2c 0%2c 0.58)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1761.7186448506554 226.2442601700783L1527.9386790193414 242.59174787692493 1778.066132557502 460.0242260013924z' fill='rgba(255%2c 156%2c 0%2c 0.58)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1619.5749032775843 337.8753229965222L1562.4611868727497 550.2169430655076 1748.9686252105364 503.7154159493497z' fill='rgba(255%2c 156%2c 0%2c 0.58)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M644.5334511404103 935.8951693950477L725.7775266938412 1014.3516611765735 802.8402265894146 853.2573019556644z' fill='rgba(255%2c 156%2c 0%2c 0.58)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1253.8809513704814 468.4117671219593L1174.1427798335749 586.6284679431506 1391.336916833815 647.1273748379148z' fill='rgba(255%2c 156%2c 0%2c 0.58)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1107'%3e%3crect width='1920' height='1080' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.432);
+  padding-left: 100px;
+  padding-right: 100px;
+  color: white;
+  position: fixed;
+}
+
+.menu {
+  margin-left: 30px;
+  margin-right: 30px;
+  -webkit-transition: .3s color;
+  transition: .3s color;
+}
+
+.menu:hover {
+  color: #ffa800;
+}
+
+.tvseries {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.664);
+  width: 140px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  -webkit-transition: .6s;
+  transition: .6s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+  text-align: center;
+  opacity: 0;
+  display: none;
+}
+
+.tvseries a {
+  padding: 5px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.tvseries:hover + .tvseries a {
+  display: block;
+}
+
+.tvseries:hover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1;
+}
+
+.tvseries a:hover {
+  background-color: white;
+  color: #ffa800;
+}
+
+.menu:hover + .tvseries {
+  opacity: 1;
+  display: block;
+}
+
+.menu:hover + .tvseries a {
+  display: block;
+}
+
+.logo {
+  color: #ffa800;
+  font-weight: 700;
+}
+
+.signin {
+  border: none;
+  outline: none;
+  background-color: #ffa800;
+  width: 120px;
+  height: 30px;
+  color: white;
+  font-size: 12pt;
+  font-weight: 600;
+  margin-right: 15px;
+  cursor: pointer;
+  border-radius: 100px;
+}
+
+.signup {
+  border: #ffa800 2px solid;
+  outline: none;
+  background-color: transparent;
+  width: 120px;
+  height: 30px;
+  color: white;
+  font-size: 12pt;
+  font-weight: 600;
+  margin-left: 15px;
+  cursor: pointer;
+  -webkit-transition: .3s background-color;
+  transition: .3s background-color;
+  border-radius: 100px;
+}
+
+.signup:hover {
+  background-color: #ffa800;
+}
+
+.fa-bars {
+  font-size: 16pt;
+  display: none;
+  cursor: pointer;
+}
+
+#mobilemenu {
+  width: 100%;
+  height: 80vh;
+  background-color: rgba(0, 0, 0, 0.788);
+  position: absolute;
+  top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  display: none;
+}
+
+#mobilemenu a {
+  font-size: 16pt;
+  font-weight: 600;
+  padding: 10px 45px 10px 45px;
+  border-radius: 100px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#mobilemenu a:hover {
+  background-color: white;
+  color: #ffa800;
+  font-size: 18pt;
+}
+
+.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  padding-left: 100px;
+  padding-right: 50px;
+  padding-top: 150px;
+  color: white;
+}
+
+.showcover {
+  background-image: url(../images/walkingdead.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: 500px;
+  height: 500px;
+  -webkit-box-shadow: 0px 0px 15px black;
+          box-shadow: 0px 0px 15px black;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.showcover:hover {
+  -webkit-box-shadow: 0px 0px 25px black;
+          box-shadow: 0px 0px 25px black;
+  -webkit-filter: grayscale(20%);
+          filter: grayscale(20%);
+}
+
+.showinfo {
+  margin-left: 25px;
+}
+
+.showinfo h1 {
+  font-family: "Dead Font Walking";
+  color: white;
+  font-size: 52pt;
+  font-weight: 100;
+}
+
+.showinfo h5 {
+  color: #e2e2e2;
+  font-weight: 600;
+}
+
+.showinfo p {
+  font-weight: 400;
+  font-size: 10pt;
+}
+
+.description {
+  max-width: 600px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 12pt;
+}
+
+.rating {
+  margin-top: 30px;
+}
+
+rating {
+  color: #ffa800;
+}
+
+.showbuttons {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.watchnow {
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 40px;
+  background-color: #ffa800;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: 600;
+  font-size: 14pt;
+  margin-right: 10px;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.watchlater {
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 40px;
+  background-color: transparent;
+  border: 3px #ffa800 solid;
+  outline: none;
+  color: white;
+  font-weight: 600;
+  font-size: 14pt;
+  cursor: pointer;
+  margin-left: 10px;
+  -webkit-transition: .3s background-color;
+  transition: .3s background-color;
+  border-radius: 100px;
+}
+
+.watchlater:hover {
+  background-color: #ffa800;
+}
+
+#othershows {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: white;
+}
+
+#othershows h2 {
+  font-size: 20pt;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-left: 10px;
+}
+
+.most {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.prisonbreak {
+  background-image: url(../images/prisonbreak.jpg);
+}
+
+.breakingbad {
+  background-image: url(../images/breakingbad.jpg);
+}
+
+.blackmirror {
+  background-image: url(../images/blackmirror.jpg);
+}
+
+.strangerthings {
+  background-image: url(../images/strangerthings.jpg);
+}
+
+.sherlockholmes {
+  background-image: url(../images/sherlockholmes.jpg);
+}
+
+.fastandfurious9 {
+  background-image: url(../images/fastandfurious9.jpg);
+}
+
+.shows {
+  width: 250px;
+  height: 250px;
+  background-size: 250px;
+  margin: 10px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+}
+
+.shows p {
+  font-size: 14pt;
+  font-weight: 600;
+}
+
+.shows:hover {
+  -webkit-box-shadow: 0px 0px 25px black;
+          box-shadow: 0px 0px 25px black;
+  background-size: 270px;
+  -webkit-transform: rotate(1deg);
+          transform: rotate(1deg);
+}
+
+.showsbuttonsnow {
+  outline: none;
+  border: none;
+  background-color: #ffa800;
+  color: white;
+  padding: 5px 5px 5px 10px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.showsbuttonslater {
+  outline: none;
+  border: none;
+  background-color: #ffa800;
+  color: white;
+  padding: 5px 5px 5px 5px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#footer {
+  width: 100%;
+  height: 150px;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.toppart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.bottompart {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-bottom: 10px;
+}
+
+.footerlogo {
+  font-size: 48pt;
+  font-weight: bold;
+}
+
+.quicklinks a {
+  margin-left: 10px;
+  margin-right: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.watchlaterinfo {
+  position: fixed;
+  width: 300px;
+  height: 80px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 10px;
+  left: 50%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 98888888888888999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 1000px;
+  color: white;
+  display: none;
+}
+
+.fa-check-circle {
+  color: #ffa800;
+  font-size: 32pt;
+}
+
+.AboutShow {
+  width: 100%;
+  min-height: 80vh;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-inline: 10px;
+}
+
+.ShowInfos2 {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 80vh;
+  background-image: url(../images/bginfoswalkingdead.jpg);
+  background-size: 200%;
+  background-position: top center;
+  -webkit-filter: brightness(100%) blur(0px);
+          filter: brightness(100%) blur(0px);
+  -webkit-animation: InfoFade 2s  alternate ease-in-out;
+          animation: InfoFade 2s  alternate ease-in-out;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+.ShowInfos2:hover {
+  -webkit-box-shadow: inset 0px 0px 60px 500px #0a0a0a;
+          box-shadow: inset 0px 0px 60px 500px #0a0a0a;
+  background-size: 250%;
+}
+
+.ShowInfos2:hover > p, b {
+  color: #ffa800 !important;
+  text-shadow: 0px 0px 7px #ffa800;
+  -webkit-transform: rotate(3deg);
+          transform: rotate(3deg);
+  color: white;
+}
+
+.ShowInfos2 p, .ShowInfos2 b, .ShowInfos2 button {
+  color: #1b1b1b;
+  -webkit-transform: translateY(0px) scale(1);
+          transform: translateY(0px) scale(1);
+  -webkit-animation: InfoDown 2s  alternate ease-in-out;
+          animation: InfoDown 2s  alternate ease-in-out;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.ShowVideo {
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80vh;
+}
+
+.DiziAdiP {
+  font-size: 44pt;
+  font-weight: lighter;
+  font-family: "Dead Font Walking";
+  color: #804004 !important;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.DiziSlogan {
+  color: #c4c4c4;
+  font-size: 22pt;
+  font-weight: lighter;
+  font-family: "Dead Font Walking";
+  line-height: 10pt;
+  margin-bottom: 20px;
+}
+
+.gobackbutton {
+  outline: none;
+  border: none;
+  background-color: #ffa800;
+  color: white;
+  padding: 5px 5px 5px 10px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.gobackbutton:hover {
+  padding: 5px 60px 5px 60px;
+}
+
+@-webkit-keyframes InfoFade {
+  0% {
+    background-size: 500%;
+    -webkit-filter: brightness(0%) blur(10px);
+            filter: brightness(0%) blur(10px);
+  }
+  100% {
+    background-size: 200%;
+    -webkit-filter: brightness(100%) blur(0px);
+            filter: brightness(100%) blur(0px);
+  }
+}
+
+@keyframes InfoFade {
+  0% {
+    background-size: 500%;
+    -webkit-filter: brightness(0%) blur(10px);
+            filter: brightness(0%) blur(10px);
+  }
+  100% {
+    background-size: 200%;
+    -webkit-filter: brightness(100%) blur(0px);
+            filter: brightness(100%) blur(0px);
+  }
+}
+
+@-webkit-keyframes InfoDown {
+  0% {
+    -webkit-transform: translateY(-200px) scale(0.5);
+            transform: translateY(-200px) scale(0.5);
+  }
+  100% {
+    -webkit-transform: translateY(0px) scale(1);
+            transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes InfoDown {
+  0% {
+    -webkit-transform: translateY(-200px) scale(0.5);
+            transform: translateY(-200px) scale(0.5);
+  }
+  100% {
+    -webkit-transform: translateY(0px) scale(1);
+            transform: translateY(0px) scale(1);
+  }
+}
+
+@media only screen and (max-width: 1285px) {
+  .show {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-right: 100px;
+  }
+  .showinfo {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .showinfo h1 {
+    font-size: 38pt;
+  }
+  .description {
+    max-width: 600px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #mobilemenu {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .menu {
+    display: none;
+  }
+  .signbuttons {
+    display: none;
+  }
+  .fa-bars {
+    display: block;
+  }
+  .footerlogo {
+    font-size: 24pt;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .most {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #othershows h2 {
+    font-size: 18pt;
+    text-align: center;
+  }
+  .show {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  #othershows {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .showcover {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .showcover {
+    width: 250px;
+    height: 250px;
+  }
+  .show {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .showinfo h1 {
+    font-size: 24pt;
+  }
+  .description {
+    font-size: 10pt;
+  }
+  .showinfo h5 {
+    padding-left: 0;
+  }
+  .showinfo {
+    margin-left: 0;
+  }
+  .watchnow {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 10pt;
+  }
+  .watchlater {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 10pt;
+  }
+  .shows {
+    width: 230px;
+    height: 230px;
+    background-size: 230px;
+  }
+  .showbuttonsnow {
+    font-size: 10pt;
+  }
+  .showsbuttonslater {
+    font-size: 10pt;
+  }
+  .navigation {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .showcover {
+    width: 200px;
+    height: 200px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
